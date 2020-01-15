@@ -10,31 +10,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8436095f-3134-4ac5-8703-b2e516183f47" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/DadJokesApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/DadJokesApplication.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/data/DadJokeRetrofitService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/data/DadJokeRetrofitService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/data/ResponseHandler.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/data/ResponseHandler.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/enums/Status.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/enums/Status.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/koinmodules/appModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/koinmodules/appModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/koinmodules/networkModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/koinmodules/networkModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/models/JokesModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/models/JokesModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/models/JokesUIModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/models/JokesUIModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/models/Result.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/models/Result.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/repository/DadRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/repository/DadRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/repository/DadRepositoryImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/repository/DadRepositoryImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/result/JokeResult.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/result/JokeResult.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/ui/JokeItem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/ui/JokeItem.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/ui/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/ui/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/ui/MainFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/ui/MainFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/viewmodel/MainViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/viewmodel/MainViewModel.kt" afterDir="false" />
-    </list>
+    <list default="true" id="8436095f-3134-4ac5-8703-b2e516183f47" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,8 +132,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/DadJokesApplication.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+            <state relative-caret-position="210">
+              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
               <folding>
                 <element signature="e#31#301#0" expanded="true" />
               </folding>
@@ -273,8 +249,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="163" />
-    <option name="y" value="71" />
+    <option name="x" value="590" />
+    <option name="y" value="272" />
     <option name="width" value="1441" />
     <option name="height" value="751" />
   </component>
@@ -541,7 +517,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="163" y="71" width="1441" height="751" extended-state="0" />
+    <frame x="163" y="70" width="1441" height="751" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" sideWeight="0.84424376" visible="true" weight="0.3295211" />
@@ -941,8 +917,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/onemain/challenge/DadJokesApplication.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+        <state relative-caret-position="210">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
           <folding>
             <element signature="e#31#301#0" expanded="true" />
           </folding>
