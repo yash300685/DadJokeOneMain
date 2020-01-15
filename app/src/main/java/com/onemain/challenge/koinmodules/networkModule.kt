@@ -7,6 +7,9 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.converter.moshi.MoshiConverterFactory
 
+/**
+ * Koin module which contains retrofit  dependency for calling the api .
+ */
 val networkModule = module {
     single {addInterceptor()}
     single { creteRetrofit(get()) }

@@ -23,9 +23,9 @@ import android.app.SearchManager
 import android.content.Context
 import androidx.appcompat.widget.SearchView
 
-
-
-
+/**
+ * Main Fragmwent class which holds up UI for Dad Joke list,search ,Swipe to refresh and share functionality
+ */
 
 val fragmentModule= module { factory { MainFragment() } }
 class MainFragment : Fragment() {
@@ -61,6 +61,7 @@ class MainFragment : Fragment() {
     }
 
 
+    //Get all jokes from api
     private fun getAllJokes()
     {
         val liveData=viewModel.getAllJokes()
@@ -85,6 +86,7 @@ class MainFragment : Fragment() {
             })
     }
 
+    //called when user does swipe to refresh
     private fun refreshJokes()
     {
         val liveData=viewModel.refreshJokes()
@@ -114,6 +116,8 @@ class MainFragment : Fragment() {
                 }
             })
     }
+
+    //fetch list of jokes depending on user entered text
 
     private fun searchJoke( text:String)
     {
@@ -145,11 +149,13 @@ class MainFragment : Fragment() {
             })
     }
 
+    //Open up Share bottom menu on clicking list item
     private val onItemClick = OnItemClickListener { item, _ ->
         if (item is JokeItem) {
             shareJoke(SHARE_URL+item.jokeId)
         }
     }
+
 
     private fun shareJoke(jokeUrl:String)
     {

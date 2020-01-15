@@ -9,10 +9,14 @@ import com.onemain.challenge.result.JokeResult
 import kotlinx.coroutines.Dispatchers
 
 
+/**
+ * View model class which holds up live data and calls repository layer to get data using live data builder
+ */
 class MainViewModel(private val repository: DadRepository) : ViewModel() {
 
     private var jokesData = MutableLiveData<JokeResult<Any>>()
 
+    // Get All jokes needs to called only once to prevent re-fetch of data on configuration change
  init {
      jokesData= liveData(Dispatchers.IO) {
          emit(repository.getAllJokes(""))

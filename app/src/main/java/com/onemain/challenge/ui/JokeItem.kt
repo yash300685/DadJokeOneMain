@@ -6,7 +6,10 @@ import com.xwray.groupie.kotlinandroidextensions.GroupieViewHolder
 import com.xwray.groupie.kotlinandroidextensions.Item
 import kotlinx.android.synthetic.main.jokes_list_item.view.*
 
-
+/**
+ * Groupie Item class which acts like a View Holder for Recycler View.Refer https://github.com/lisawray/groupie
+ *
+ */
 class JokeItem(private val joke:String,private val id:String): Item() {
      val jokeId=id
     override fun bind(viewHolder: GroupieViewHolder, position: Int) {

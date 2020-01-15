@@ -7,6 +7,9 @@ import com.onemain.challenge.ui.fragmentModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
+/**
+ * Application class which acts a starting point for Koin
+ */
 class DadJokesApplication:Application() {
     override fun onCreate() {
         super.onCreate()

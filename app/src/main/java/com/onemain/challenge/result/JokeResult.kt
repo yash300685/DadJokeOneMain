@@ -2,6 +2,9 @@ package com.onemain.challenge.result
 
 import com.onemain.challenge.enums.Status
 
+/**
+ * Sealed class which holds State of the application
+ */
 sealed class JokeResult<Any>(val value:Any,val status: Status)
 {
     data class Success(val result:Any):JokeResult<Any>(result,Status.SUCCESS)
