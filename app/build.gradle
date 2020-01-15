@@ -38,13 +38,15 @@ dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.7.1'
     implementation 'com.squareup.retrofit2:converter-moshi:2.7.1'
     implementation 'com.squareup.moshi:moshi:1.9.2'
+
     implementation "androidx.recyclerview:recyclerview:1.1.0"
     //Gson converter for retrofit
     implementation 'com.squareup.retrofit2:converter-gson:2.7.1'
 
+    //SwipeRefreshLayout
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
 
-    //Koin for depeendency injection
+    //Koin for dependency injection
     implementation "org.koin:koin-android:$koin_version"
     implementation "org.koin:koin-androidx-viewmodel:$koin_version"
 

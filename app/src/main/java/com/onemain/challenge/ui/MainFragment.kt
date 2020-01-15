@@ -24,6 +24,9 @@ import android.content.Context
 import androidx.appcompat.widget.SearchView
 
 
+
+
+
 val fragmentModule= module { factory { MainFragment() } }
 class MainFragment : Fragment() {
     private  val viewModel:MainViewModel by viewModel()
@@ -181,8 +184,17 @@ class MainFragment : Fragment() {
                     return true
                 }
             }
+
+
             searchView!!.setOnQueryTextListener(queryTextListener)
+
+            searchView!!.setOnCloseListener {
+                refreshJokes()
+                false
+            }
         }
+
+
         super.onCreateOptionsMenu(menu, inflater)
     }
 }
