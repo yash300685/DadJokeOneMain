@@ -1,27 +1,37 @@
 package com.onemain.challenge.viewmodel
 
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
-import androidx.lifecycle.map
-import com.onemain.challenge.data.DadJoke
-import com.onemain.challenge.data.DadJokeRetrofitService
-import java.io.IOException
+import com.onemain.challenge.repository.DadRepository
+import com.onemain.challenge.result.JokeResult
+import kotlinx.coroutines.Dispatchers
 
-class MainViewModel : ViewModel() {
-    private val retrofit = DadJokeRetrofitService.get()
 
-    fun getJoke() = liveData<DadJoke> {
-        val joke = fetchJoke()
-        if (joke != null) {
-            emit(joke)
-        }
-    }.map { dadJoke -> dadJoke.text }
+class MainViewModel(private val repository: DadRepository) : ViewModel() {
 
-    private suspend fun fetchJoke(): DadJoke? {
-        return try {
-            DadJokeRetrofitService.get().nextJoke()
-        } catch (e: IOException) {
-            null
-        }
+    private var jokesData = MutableLiveData<JokeResult<Any>>()
+
+ init {
+     jokesData= liveData(Dispatchers.IO) {
+         emit(repository.getAllJokes(""))
+     } as MutableLiveData<JokeResult<Any>>
+ }
+
+    fun getAllJokes(): LiveData<JokeResult<Any>> {     // Simple getter
+        return jokesData
     }
+
+    fun refreshJokes() : LiveData<JokeResult<Any>> = liveData(Dispatchers.IO) {
+        emit(JokeResult.LOADING(true))
+        emit(repository.getAllJokes(""))
+    }
+
+    fun searchJoke(searchTerm: String): LiveData<JokeResult<Any>> = liveData(Dispatchers.IO) {
+        emit(JokeResult.LOADING(true))
+        emit(repository.getAllJokes(searchTerm))
+    }
+
+
 }

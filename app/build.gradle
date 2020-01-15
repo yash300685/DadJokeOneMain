@@ -25,6 +25,8 @@ android {
 }
 
 dependencies {
+    def koin_version="2.0.1"
+    def groupie_version="2.7.0"
     kapt 'com.squareup.moshi:moshi-kotlin-codegen:1.9.2'
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.1.0'
@@ -36,4 +38,17 @@ dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.7.1'
     implementation 'com.squareup.retrofit2:converter-moshi:2.7.1'
     implementation 'com.squareup.moshi:moshi:1.9.2'
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    //Gson converter for retrofit
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.1'
+
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+
+    //Koin for depeendency injection
+    implementation "org.koin:koin-android:$koin_version"
+    implementation "org.koin:koin-androidx-viewmodel:$koin_version"
+
+    //Groupie for faster recycler views
+    implementation "com.xwray:groupie:$groupie_version"
+    implementation "com.xwray:groupie-kotlin-android-extensions:$groupie_version"
 }

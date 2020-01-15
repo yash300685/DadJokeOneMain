@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="unauthorized">User is Unauthorised</string>
+    <string name ="not_found">Not found</string>
+    <string name="generic_error">Something went wrong,please try again later</string>
+</resources>

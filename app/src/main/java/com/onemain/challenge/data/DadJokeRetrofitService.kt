@@ -1,33 +1,16 @@
 package com.onemain.challenge.data
 
+import com.onemain.challenge.models.JokesModel
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.GET
+import retrofit2.http.Query
 
 interface DadJokeRetrofitService {
-    @GET("/")
-    suspend fun nextJoke(): DadJoke
 
-    companion object {
-        fun get(): DadJokeRetrofitService {
-            val client = OkHttpClient.Builder()
-                .addInterceptor {
-                    it.proceed(
-                        it.request().newBuilder()
-                            .header("Accept", "application/json")
-                            .build()
-                    )
-                }
-                .build()
+    @GET("/search")
+    suspend fun getAllJokes(@Query("term") searchTerm:String): JokesModel
 
-            val retrofit: Retrofit = Retrofit.Builder()
-                .baseUrl("https://icanhazdadjoke.com/")
-                .addConverterFactory(MoshiConverterFactory.create())
-                .client(client)
-                .build()
 
-            return retrofit.create<DadJokeRetrofitService>(DadJokeRetrofitService::class.java)
-        }
-    }
 }
